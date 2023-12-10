@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links And Images</title>
+</head>
+
+
+<body>
+    <h1>Homepage</h1>
+    <a href="https://www.theodinproject.com/about" target="_blank" rel="noopener noreferrer">
+        <p>Click Me</p>
+    </a>
+        <!-- href = hypertext reference or the actual link -->
+        <!-- target = "_blank" is used to open link on new tab -->
+        <!-- rel="no....." noopener prefents the opened link from gaining access to the webpage from which it was opened-->
+        <!-- noreferrer prevents opened link from knowing which webpage or resource has a link (or reference) to it -->
+        <!-- why do we need noop/noref? security (prevents phishing, tabnabbing. noref -> 
+            not let opened link know your webpage links to it) note: what about affliates? -->
+        <!-- good code practice -> always pair target="_blank" with a rel="noop... noref..." even though most browsers have built in security-->
+    <a href="./pages/about.html">
+        <p><strong>About</strong></p>
+    </a>
+    <!-- relative link -> needs actual file directory path (preceding with './'  is best practice for possible errors) -->
+
+    <img src="./images/dog.jpg" alt="Picture of Charles the dog" height="300" width="250">
+    <!-- 'alt' with every img is best practice -->
+    <!-- it improves accessibility (for ex. screen readers) and it will be used if the image cannot be loaded -->
+    <!-- always specifying size attributes for images is good practice -->
+
+</body>
+
+</html>
